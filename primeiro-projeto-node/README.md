@@ -113,3 +113,14 @@ yarn add -D eslint-import-resolver-typescript
 #### Instalando a biblioteca prettier
 
 yarn add prettier eslint-config-prettier eslint-plugin-prettier -D
+
+#### Instalando a biblioteca uuidv4
+
+yarn add uuidv4
+
+#### Instalando a biblioteca date-fns
+
+yarn add date-fns
+
+#### Configurando o Debug
+
