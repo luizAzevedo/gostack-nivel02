@@ -7,9 +7,14 @@
 ### Ferramentas utilizadas:
 
 - [Express](https://expressjs.com/)
-- [Nodemon](https://nodemon.io/)
+- [Typescript](https://www.typescriptlang.org/)
 - [Insomnia](https://insomnia.rest/)
 - [Uuidv4](https://www.npmjs.com/package/uuidv4)
+- [Eslint](https://eslint.org/)
+- [Prettier](https://prettier.io/)
+- [date-fns](https://date-fns.org/)
+- [ts-node-dev](https://www.npmjs.com/package/ts-node-dev)
+- [@types/express](https://www.npmjs.com/package/@types/express)
 - [Cors](https://enable-cors.org/index.html)
 
 ---
