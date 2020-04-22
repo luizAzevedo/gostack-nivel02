@@ -15,6 +15,9 @@
 - [date-fns](https://date-fns.org/)
 - [ts-node-dev](https://www.npmjs.com/package/ts-node-dev)
 - [@types/express](https://www.npmjs.com/package/@types/express)
+- [Docker](https://www.docker.com/)
+- [PostgreSQL](https://www.postgresql.org/)
+- [DBeaver](https://dbeaver.io/)
 - [Cors](https://enable-cors.org/index.html)
 
 ---
@@ -127,5 +130,24 @@ yarn add uuidv4
 
 yarn add date-fns
 
-#### Configurando o Debug
+#### Instalando a biblioteca typeorm
 
+yarn add typeorm pg
+
+yarn add reflect-metadata
+
+#### Criando as migrations
+
+yarn typeorm migration:create -n CreateAppointments
+
+#### Executando as migrations
+
+yarn typeorm migration:run
+
+#### Revertendo uma migrations
+
+yarn typeorm migration:revert
+
+#### Consultando as migrations
+
+yarn typeorm migration:show
