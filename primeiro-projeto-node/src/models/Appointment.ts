@@ -1,9 +1,22 @@
-import { Entity, Column, PrimaryGeneratedColumn } from 'typeorm';
+import {
+  Entity,
+  Column,
+  PrimaryGeneratedColumn,
+  CreateDateColumn,
+  UpdateDateColumn,
+  ManyToOne,
+  JoinColumn,
+} from 'typeorm';
+import User from './User';
+
 /**
  * É a representação de como um dado é composto dentro da aplicação.
  *
  * Quando usa typeorm não precisa do contructor.
  * Alterar no tsconfig.json: "strictPropertyInitialization": true => false
+ * Um para Um (OneToOne)
+ * Um para Muitos (OneToMany)
+ * Muitos para Muitos (ManyToMany)
  */
 @Entity('appointments')
 class Appointment {
@@ -11,16 +24,20 @@ class Appointment {
   id: string;
 
   @Column('varchar')
-  provider: string;
+  provider_id: string;
+
+  @ManyToOne(() => User)
+  @JoinColumn({ name: 'provider_id' })
+  provider: User;
 
   @Column('timestamp with time zone')
   date: Date;
 
-  // constructor({ provider, date }: Omit<Appointment, 'id'>) {
-  //   this.id = uuid();
-  //   this.provider = provider;
-  //   this.date = date;
-  // }
+  @CreateDateColumn()
+  create_at: Date;
+
+  @UpdateDateColumn()
+  updated_at: Date;
 }
 
 export default Appointment;

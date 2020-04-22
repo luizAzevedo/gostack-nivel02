@@ -19,6 +19,7 @@
 - [PostgreSQL](https://www.postgresql.org/)
 - [DBeaver](https://dbeaver.io/)
 - [TypeOrm](https://typeorm.io/)
+- [bcryptjs](https://www.npmjs.com/package/bcryptjs)
 
 ---
 
@@ -138,7 +139,7 @@ yarn add reflect-metadata
 
 #### Criando as migrations
 
-yarn typeorm migration:create -n CreateAppointments
+yarn typeorm migration:create -n `<Nome da Migration>`
 
 #### Executando as migrations
 
@@ -151,3 +152,11 @@ yarn typeorm migration:revert
 #### Consultando as migrations
 
 yarn typeorm migration:show
+
+#### Instalando a biblioteca bcryptjs
+
+yarn add bcryptjs
+
+#### Instalando a biblioteca @types/bcryptjs
+
+yarn add @types/bcryptjs -D
