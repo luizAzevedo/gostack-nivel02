@@ -18,7 +18,7 @@
 - [Docker](https://www.docker.com/)
 - [PostgreSQL](https://www.postgresql.org/)
 - [DBeaver](https://dbeaver.io/)
-- [Cors](https://enable-cors.org/index.html)
+- [TypeOrm](https://typeorm.io/)
 
 ---
 
