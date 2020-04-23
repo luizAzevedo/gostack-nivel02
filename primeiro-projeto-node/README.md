@@ -20,6 +20,9 @@
 - [DBeaver](https://dbeaver.io/)
 - [TypeOrm](https://typeorm.io/)
 - [bcryptjs](https://www.npmjs.com/package/bcryptjs)
+- [jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken)
+- [MD5](http://www.md5.cz/)
+- [MD5](http://www.md5.cz/)
 
 ---
 
@@ -31,43 +34,9 @@
   `$ yarn`
 
   `$ yarn dev`
-
-- No insomnia, crie uma requisição (get, post, put, delete) e basta copiar as seguintes rotas:
-
-  Método GET (listar projetos): http://localhost:3333/projects
-
-  Método DELETE (deletar projeto): http://localhost:3333/projects/1
-
-  Método POST (criar projeto): http://localhost:3333/projects,
-      		Colocar no body:
-          {
-      				"title": "Novo projeto",
-              "owner": "Novo proprietário"
-      		}
-
-  Método PUT (atualizar projeto): http:/- No insomnia, crie uma requisição (get, post, put, delete) e basta copiar as seguintes rotas:
-
-  Método GET (listar projetos): http://localhost:3333/projects
-
-  Método DELETE (deletar projeto): http://localhost:3333/projects/1
-
-  Método POST (criar projeto): http://localhost:3333/projects,
-      		Colocar no body:
-          {
-      				"title": "Novo projeto",
-              "owner": "Novo proprietário"
-      		}
-
-  Método PUT (atualizar projeto): http://localhost:3333/projects/1,
-      		Colocar no body:
-          {
-      				"title": "altera titulo",
-              "owner": "altera proprietário"
-      		}
-              "owner": "altera proprietário"
-      		}
-
 ---
+
+jwt.io
 
 ### Comandos utilizados na instalação:
 
@@ -153,10 +122,14 @@ yarn typeorm migration:revert
 
 yarn typeorm migration:show
 
-#### Instalando a biblioteca bcryptjs
+#### Instalando a biblioteca bcryptjs e @types/bcryptjs
 
 yarn add bcryptjs
 
-#### Instalando a biblioteca @types/bcryptjs
-
 yarn add @types/bcryptjs -D
+
+#### Instalando a biblioteca jsonwebtoken e @types/jsonwebtoken
+
+yarn add jsonwebtoken
+
+yarn add @types/jsonwebtoken -D
