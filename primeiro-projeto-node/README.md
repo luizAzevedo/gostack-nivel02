@@ -142,3 +142,6 @@ yarn add multer
 
 yarn add @types/multer -D
 
+#### Instalando a biblioteca express async error
+
+yarn add express-async-errors
