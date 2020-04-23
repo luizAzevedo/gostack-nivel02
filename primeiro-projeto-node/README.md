@@ -22,7 +22,7 @@
 - [bcryptjs](https://www.npmjs.com/package/bcryptjs)
 - [jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken)
 - [MD5](http://www.md5.cz/)
-- [MD5](http://www.md5.cz/)
+- [multer](https://www.npmjs.com/package/multer)
 
 ---
 
@@ -36,7 +36,9 @@
   `$ yarn dev`
 ---
 
-jwt.io
+ jwt.io
+ MD5
+ multer é um middleware node.js para manipular dados de multipart/form-data, usado principalmente para o upload de arquivos.
 
 ### Comandos utilizados na instalação:
 
@@ -133,3 +135,10 @@ yarn add @types/bcryptjs -D
 yarn add jsonwebtoken
 
 yarn add @types/jsonwebtoken -D
+
+#### Instalando a biblioteca multer e @types/multer
+
+yarn add multer
+
+yarn add @types/multer -D
+
