@@ -23,6 +23,7 @@
 - [jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken)
 - [MD5](http://www.md5.cz/)
 - [multer](https://www.npmjs.com/package/multer)
+- [Cors](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Controle_Acesso_CORS)
 
 ---
 
@@ -145,3 +146,7 @@ yarn add @types/multer -D
 #### Instalando a biblioteca express async error
 
 yarn add express-async-errors
+
+#### Instalando a biblioteca Cors e @types/cors
+
+yarn add cors @types/cors.
